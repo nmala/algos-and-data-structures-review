@@ -8,6 +8,21 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
-class Queue {}
+class Queue {
+  constructor() {
+    this.data = [];
+  }
+
+  add(record) {
+    this.data.unshift(record);
+  }
+
+  remove() {
+    // no arg needed b/c will always remove last item.
+    // returning the removed record because may want to work with it. not needed
+    // for added record because the queue instance will contain it already.
+    return this.data.pop();
+  }
+}
 
 module.exports = Queue;

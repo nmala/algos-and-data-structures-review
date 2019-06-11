@@ -16,6 +16,11 @@ class Queue {
   remove() {
     return this.data.pop();
   }
+
+  peek() {
+    // retuns the last element that is next in line to be removed w/o removing it.
+    return this.data[this.data.length - 1];
+  }
 }
 
 module.exports = Queue;
