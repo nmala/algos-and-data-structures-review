@@ -345,3 +345,14 @@
 ### Queue from Stack Question
 
 - most common question to see around queues and stacks
+
+## Tree
+
+- Each element is a node
+  - each node holds data and a reference to its children
+- Siblings only if share common parent, doesn't matter if at same level
+- Tree traversal - iterating through every node
+- Breadth-First Traversal
+  - Iterate at each level from L => R
+- Depth-First Traversal
+  - Go down left most branch first all the way to the bottom (span the depth), then go back up to closest parent, go all the way to bottom, repeat until all children of parent are visited.
