@@ -358,4 +358,12 @@
   - Go down left most branch first all the way to the bottom (span the depth), then go back up to closest parent, go all the way to bottom, repeat until all children of parent are visited.
 - Tree can have a 'root' property which points to the root node.
 - Breadth-First used to list positions in ranking order of a organization chart (company, military, etc)
--
+
+## Binary Search Tree
+
+- Tree with restriction on number of children and value
+- every node can have at most 2 children
+  - left node, right node
+- L node has value < parentNode.value
+- R node has value > parentNode.value, and therefore, > than sibling L node value
+- Not to be confused with Binary Tree, which is just a tree with max 2 children per node, without a value restriction.

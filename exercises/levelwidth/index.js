@@ -11,6 +11,10 @@
 // 4       5
 // Answer: [1, 3, 2]
 
+// for this type of problem, breadth-first search makes more sense to use
+
+// Tree-related question regarding 'width' = always use breadth-first!
+
 function levelWidth(root) {}
 
 module.exports = levelWidth;
