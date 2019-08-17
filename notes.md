@@ -356,3 +356,6 @@
   - Iterate at each level from L => R
 - Depth-First Traversal
   - Go down left most branch first all the way to the bottom (span the depth), then go back up to closest parent, go all the way to bottom, repeat until all children of parent are visited.
+- Tree can have a 'root' property which points to the root node.
+- Breadth-First used to list positions in ranking order of a organization chart (company, military, etc)
+-

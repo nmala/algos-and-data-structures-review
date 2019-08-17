@@ -26,6 +26,33 @@ class Node {
   }
 }
 
-class Tree {}
+class Tree {
+  constructor() {
+    this.root = null;
+  }
+
+  traverseBF(fn) {
+    const arr = [this.root];
+
+    while (arr.length) {
+      const node = arr.shift();
+      // if want an array of the breadth-first traversal, can have a list array and at this poiint, list.push(node.data) while each node is picked out of the array for processing. then make sure to return list
+      arr.push(...node.children);
+      fn(node);
+    }
+  }
+
+  traverseDF(fn) {
+    const arr = [this.root];
+
+    while (arr.length) {
+      const node = arr.shift();
+
+      // only difference between breadth-frist and depth-first is BF adds to end of array of children, which makes sense as you're listing all children first, not all the way down. DF adds to the front of array because you're listing the child of each child to go all the way down the tree.
+      arr.unshift(...node.children);
+      fn(node);
+    }
+  }
+}
 
 module.exports = { Tree, Node };
