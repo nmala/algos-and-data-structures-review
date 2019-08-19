@@ -5,8 +5,10 @@
 
 class Events {
   constructor() {
+    // hold data in an obj, key is eventName, and value is an array of callbacks for that given eventName.
     this.events = {};
   }
+
   // Register an event handler
   on(eventName, callback) {
     if (this.events[eventName]) {
